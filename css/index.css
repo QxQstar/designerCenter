@@ -1,0 +1,83 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow-x:hidden; 
+}
+.wrap{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+header{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-color: #252525;
+}
+.hTop{
+	position: relative;
+	left: 10px;
+	top: 10px;
+	height: 60px;
+}
+
+.hTop h1{
+	position: absolute;
+	bottom: 5px;
+	left: 70px;
+	color: #FFFFFF;
+	font: bolder 24px '宋体';
+
+}
+.hButtom{
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	right: 20px;
+	color: #ffffff;
+}
+.hButtom .left,.nav li,.nav{
+	float: left;
+}
+.hButtom .left{
+	font: bold 20px '宋体';
+}
+.hButtom .right{
+	float: right;
+}
+.nav{
+	margin-left:20%;
+}
+.nav li{
+	list-style: none;
+	margin:0 10px;
+	padding-top: 5px; 
+	
+}
+.hButtom a{
+	text-decoration: none; 
+	color: #ffffff;
+	margin:15px;
+	font: normal 15px '微软雅黑'; 
+}
+.hButtom a:hover{
+	text-decoration: underline;
+}
+ .hButtom .addBackground{
+	background-color: #FFFFFF;
+	border-radius:0 0 12px 12px ;
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content:'.';
+	display: block;
+	clear:both;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
