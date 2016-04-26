@@ -47,9 +47,10 @@ header{
 }
 .hButtom .right{
 	float: right;
+	padding-top: 5px; 
 }
 .nav{
-	margin-left:20%;
+	margin-left:10%;
 }
 .nav li{
 	list-style: none;
@@ -69,6 +70,7 @@ header{
  .hButtom .addBackground{
 	background-color: #FFFFFF;
 	border-radius:0 0 12px 12px ;
+	/*box-shadow: 1px 1px 1px;*/
 }
 .clearfix{
 	zoom:1;
@@ -81,3 +83,36 @@ header{
 	visibility: hidden;
 	overflow: hidden;
 }
+@media screen and (max-width: 950px) {
+	.hButtom .left{
+		display: none;
+	}
+	.nav li{
+		margin:0 10px;
+		
+	}
+	.hButtom a{
+		margin:5px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.hButtom .left{
+		display: none;
+	}
+	.nav li{
+		margin:0;
+		
+	}
+	.nav{
+		margin-left:5%;
+	}
+	.hButtom a{
+		margin:5px;
+	}
+	.hButtom{
+		left: 0;
+		right: 2px;
+	}
+}
+
+
