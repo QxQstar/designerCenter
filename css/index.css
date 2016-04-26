@@ -83,6 +83,48 @@ header{
 	visibility: hidden;
 	overflow: hidden;
 }
+/*article{
+	-webkit-box-shadow:  20px 10px 5px #6E6E6E;
+	box-shadow:  20px 10px 5px #6E6E6E;
+}*/
+article,aside,.userUpload{
+	width: 75%;
+	margin: 50px auto;
+}
+.description p{
+	text-indent: 2em;
+}
+.upload{
+	width: 300px;
+	margin: 0 auto;
+}
+.upload .uploadurl{
+	display: inline;
+	font-size: 12px;
+	margin-right: 10px;
+}
+.upload #upload{
+	display: inline-block;
+	height: 70px;
+	line-height: 70px;
+	width: 150px;
+	color: #ffffff;
+	background-color: #2E2E2E;
+	text-align: center;
+}
+.upload .file{
+	display: none;
+}
+aside{
+	margin-top: 50px;
+}
+aside .list{
+	margin-left: 50px;
+}
+.list .listItem{
+	list-style: none;
+	color: #505050;
+}
 @media screen and (max-width: 950px) {
 	.hButtom .left{
 		display: none;
@@ -93,6 +135,15 @@ header{
 	}
 	.hButtom a{
 		margin:5px;
+	}
+	.upload{
+	width: 250px;
+	margin: 0 auto;
+	}
+	.upload #upload{
+		height: 60px;
+		line-height: 60px;
+		width: 135px;
 	}
 }
 @media screen and (max-width: 420px) {
@@ -112,6 +163,23 @@ header{
 	.hButtom{
 		left: 0;
 		right: 2px;
+	}
+	 .hButtom .addBackground{
+		background-color: #FFFFFF;
+		border-radius:0 0 8px 8px ;
+		/*box-shadow: 1px 1px 1px;*/
+	}
+	aside .list{
+	margin-left: 10px;
+}
+	.upload{
+	width: 200px;
+	margin: 0 auto;
+	}
+	.upload #upload{
+		height: 50px;
+		line-height: 50px;
+		width: 100px;
 	}
 }
 

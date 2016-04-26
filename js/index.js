@@ -24,4 +24,17 @@ function changeLinkBackground(){
 		};
 	}
 }
+function uploadFile(){
+	var upload = document.getElementById('upload');
+	var file = document.getElementById('file');
+	upload.onclick = function(){
+		file.click();
+	};
+	file.onchange = function(){
+		var path = this.value;
+		var uploadurl = document.getElementById('uploadurl');
+		uploadurl.firstChild.innerText = path;
+	};
+}
+addLoadEvent(uploadFile);
 addLoadEvent(changeLinkBackground);
