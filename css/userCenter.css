@@ -1,0 +1,208 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow-x:hidden; 
+	background-color: #E0E0E0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.wrap{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+}
+header{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-color: #252525;
+}
+.hTop{
+	position: relative;
+	left: 10px;
+	top: 10px;
+	height: 60px;
+}
+
+.hTop h1{
+	position: absolute;
+	bottom: 5px;
+	left: 70px;
+	color: #FFFFFF;
+	font: bolder 24px '宋体';
+
+}
+.hButtom{
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	right: 20px;
+	color: #ffffff;
+}
+.hButtom .left,.nav li,.nav{
+	float: left;
+}
+.hButtom .left{
+	font: bold 20px '宋体';
+}
+.hButtom .right{
+	float: right;
+	padding-top: 5px; 
+}
+.nav{
+	margin-left:10%;
+}
+.nav li{
+	list-style: none;
+	margin:0 10px;
+	padding-top: 5px; 
+	
+}
+.hButtom a{
+	text-decoration: none; 
+	color: #ffffff;
+	margin:15px;
+	font: normal 15px '微软雅黑'; 
+}
+.hButtom a:hover{
+	text-decoration: underline;
+}
+ .hButtom .addBackground{
+	background-color: #FFFFFF;
+	border-radius:0 0 12px 12px ;
+	/*box-shadow: 1px 1px 1px;*/
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content:'.';
+	display: block;
+	clear:both;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+article{
+	width: 70%;
+	margin: 0 auto;
+}
+.content{
+	width: 100%;
+	margin-top: 50px 
+}
+.content .left{
+	float: left;
+	width: 15%;
+
+}
+.left p{
+	font-size: 14px;
+	line-height: 400%;
+	padding-left: 30px;
+	cursor:pointer;
+	border-radius: 10px 0 0;
+	
+}
+p.now{
+	background-color: #ffffff;
+	border-top:1px solid #D0D0D0;
+}
+.content .right{
+	float: left;
+	padding:20px 0 4% 20px;
+	width:75%;
+	background-color: #ffffff;
+	border: 2px solid #D0D0D0;
+	border-left-style:none;
+	border-top:1px solid #D0D0D0;
+	border-radius: 0 20px 70px;
+	
+}
+.right .head{
+	color: #272727;
+	font-size: 15px;
+	line-height: 200%;
+	font-weight: bold;
+}
+.row1 .message,.row2 .list,.row3 .asset{
+	margin-left: 20px;
+}
+.hide{
+	display: none;
+}
+.right .message li{
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+}
+.right span{
+	font-size: 14px;
+	color: #292929;
+}
+.right div a{
+	margin-left: 20px;
+	font-size: 14px;
+	color: #772222;
+	text-decoration: none;
+}
+.right a:hover{
+	text-decoration: underline;
+}
+
+.row2 .page{
+	text-align: center;
+}
+.list .item{
+	float: left;
+	margin: 5px;
+	border: 1px solid #D2D0D0;
+	padding: 5px;
+}
+.page span{
+	color: #333;
+	float: right;
+	margin-right: 40px;
+	text-decoration: underline;
+	background-color: transparent;
+	cursor: pointer;
+}
+@media screen and (max-width: 950px) {
+	.hButtom .left{
+		display: none;
+	}
+	.nav li{
+		margin:0 10px;
+		
+	}
+	.hButtom a{
+		margin:5px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.hButtom .left{
+		display: none;
+	}
+	.nav li{
+		margin:0;
+		
+	}
+	.nav{
+		margin-left:5%;
+	}
+	.hButtom a{
+		margin:5px;
+	}
+	.hButtom{
+		left: 0;
+		right: 2px;
+	}
+	 .hButtom .addBackground{
+		background-color: #FFFFFF;
+		border-radius:0 0 8px 8px ;
+		/*box-shadow: 1px 1px 1px;*/
+	}
+}

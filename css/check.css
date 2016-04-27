@@ -4,12 +4,15 @@
 }
 body{
 	overflow-x:hidden; 
+	background-color: #E0E0E0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .wrap{
 	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
+
 }
 header{
 	position: relative;
@@ -83,88 +86,91 @@ header{
 	visibility: hidden;
 	overflow: hidden;
 }
-/*article{
-	-webkit-box-shadow:  20px 10px 5px #6E6E6E;
-	box-shadow:  20px 10px 5px #6E6E6E;
-}*/
-h2{
-	color: #282828;
-	font: bold 18px '微软雅黑'
-}
-.head{
-	color: #3B3B3B;
-	font: bold 15px '微软雅黑';
-}
-article,aside,.userUpload{
-	width: 75%;
-	margin: 50px auto;
-}
-.description p{
-	text-indent: 2em;
-	color: #292929;
-	font: 15px '微软雅黑';
-	line-height: 25px;
-}
-.upload{
-	width: 300px;
+article{
+	width: 65%;
+	min-width: 445px;
 	margin: 0 auto;
+	background-color: #FFFFFF;
 }
-.upload .uploadurl{
-	display: inline;
-	font-size: 12px;
-	margin-right: 10px;
-}
-.upload #upload{
-	display: inline-block;
-	height: 70px;
-	line-height: 70px;
-	width: 150px;
-	color: #ffffff;
-	background-color: #2E2E2E;
+form{
+	width: 80%;
+	margin: 30px auto 0;
+	padding-top: 30px;
 	text-align: center;
+
 }
-.upload .file{
+.item-title{
+	position: relative;
+	border-bottom: 1px #C6C6C6 dashed;
+}
+.item-title span{
+	font-size: 15px;
+	font-weight: bold;
+	color: #838383;
+}
+.firstTab{
+	margin: 5px auto 0;
+	text-align: left;
+	padding-bottom: 50px;
+	border-spacing: 0px 20px;
+}
+.firstTab th{
+	vertical-align: top;
+	color: #3C3C3C;
+	font-size: 15px;
+}
+.firstTab td{
+	padding-left: 10px;
+}
+.file{
 	display: none;
 }
-aside{
-	margin-top: 50px;
-}
-aside .list{
-	margin-left: 50px;
-}
-.list .listItem{
-	list-style: none;
-	color: #505050;
-	font-size: 14px;
-	line-height: 20px;
-	margin-bottom: 20px;
-}
-.listItem .userName{
-	color: #292929;
-}
-.page{
-	text-align: center;
-	margin-bottom: 20px;
-}
-.page button{
-	margin-left: 10px;
-	border-style: none;
-	cursor: pointer;
-}
-.issue textarea{
-	width:100%;
-	height: 100px;
-}
-.issue button{
-	float: right;
-	margin-right: 10px;
-	margin-top: 10px;
-	border-style: none;
+.upload{
+	display: inline-block;
+	width: 80px;
 	height: 30px;
-	width: 100px;
-	background-color: #626262;
-	color: #ffffff;
+	line-height: 30px;
+	text-align: center;
+	color: #363636;
+	background-color: #F0F0F0;
+	vertical-align: middle;
+	border: 1px solid #DDDCDC;
+	box-shadow: 1px 1px 1px;
+	margin-bottom: 10px;
 	cursor: pointer;
+}
+.uploadurl{
+	color: #363636;
+}
+td input{
+	padding: 5px 10px;
+	height: 25px;
+	width: 300px;
+	background-color: #FEFEFE;
+	border:1px #D1D1D1 solid;
+	color: #363636;
+	border-radius: 3px; 
+}
+td span{
+	font-size: 12px;
+	color: #363636; 
+}
+td.tj{
+	text-align: center;
+}
+.tj button{
+	width: 280px;
+	height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	border:1px outset #6F6E6E;
+	background-color: #272727;
+	color: #ffffff;
+}
+footer{
+	margin-top: 30px;
+	height: 100px;
+	text-align: center;
 }
 @media screen and (max-width: 950px) {
 	.hButtom .left{
@@ -177,17 +183,11 @@ aside .list{
 	.hButtom a{
 		margin:5px;
 	}
-	.upload{
-	width: 250px;
-	margin: 0 auto;
-	}
-	.upload #upload{
-		height: 60px;
-		line-height: 60px;
-		width: 135px;
-	}
 }
 @media screen and (max-width: 420px) {
+	body{
+		overflow-x:auto;
+	}
 	.hButtom .left{
 		display: none;
 	}
@@ -210,18 +210,25 @@ aside .list{
 		border-radius:0 0 8px 8px ;
 		/*box-shadow: 1px 1px 1px;*/
 	}
-	aside .list{
-	margin-left: 10px;
-}
+	article{
+		width: 100%;
+		min-width:350px;
+		
+	}
+	td input{
+		padding: 5px 5px;
+		height: 20px;
+		width: 90%;
+		min-width: 150px;
+		background-color: #FEFEFE;
+		border:1px #D1D1D1 solid;
+		color: #929191; 
+	}
 	.upload{
-	width: 200px;
-	margin: 0 auto;
+		width: 60px;
+		height: 20px;
+		line-height: 20px;
 	}
-	.upload #upload{
-		height: 50px;
-		line-height: 50px;
-		width: 100px;
-	}
+
+
 }
-
-

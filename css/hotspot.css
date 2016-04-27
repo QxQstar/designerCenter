@@ -1,0 +1,253 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow-x:hidden; 
+}
+.wrap{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+header{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-color: #252525;
+}
+.hTop{
+	position: relative;
+	left: 10px;
+	top: 10px;
+	height: 60px;
+}
+
+.hTop h1{
+	position: absolute;
+	bottom: 5px;
+	left: 70px;
+	color: #FFFFFF;
+	font: bolder 24px '宋体';
+
+}
+.hButtom{
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	right: 20px;
+	color: #ffffff;
+}
+.hButtom .left,.nav li,.nav{
+	float: left;
+}
+.hButtom .left{
+	font: bold 20px '宋体';
+}
+.hButtom .right{
+	float: right;
+	padding-top: 5px; 
+}
+.nav{
+	margin-left:10%;
+}
+.nav li{
+	list-style: none;
+	margin:0 10px;
+	padding-top: 5px; 
+	
+}
+.hButtom a{
+	text-decoration: none; 
+	color: #ffffff;
+	margin:15px;
+	font: normal 15px '微软雅黑'; 
+}
+.hButtom a:hover{
+	text-decoration: underline;
+}
+ .hButtom .addBackground{
+	background-color: #FFFFFF;
+	border-radius:0 0 12px 12px ;
+	/*box-shadow: 1px 1px 1px;*/
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content:'.';
+	display: block;
+	clear:both;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+}
+/*article{
+	-webkit-box-shadow:  20px 10px 5px #6E6E6E;
+	box-shadow:  20px 10px 5px #6E6E6E;
+}*/
+h2{
+	color: #262626;
+	font: bold 18px '微软雅黑'
+}
+h3{
+	color: #2B2B2B;
+	font: bold 16px '微软雅黑';
+}
+/*.head{
+	color: #3B3B3B;
+	font: bold 15px '微软雅黑';
+}*/
+article,aside{
+	width: 75%;
+	margin: 50px auto;
+}
+.description{
+	width: 70%;
+	float: left;
+}
+.description p{
+	text-indent: 2em;
+	color: #2E2E2E;
+	font: 15px '微软雅黑';
+	line-height: 25px;
+}
+.userUpload{
+	width: 20%;
+	height: 200px;
+	float: left;
+	margin-left: 3%;
+	padding:3% 3% 0 3%;
+	border: 2px solid #A7A7A7;
+	border-radius: 5px 5px 60px;
+	box-shadow: 1px 0 20px;
+}
+.upload{
+	margin: 30px auto;
+}
+.upload .uploadurl{
+	display: inline;
+	font-size: 12px;
+	margin-right: 10px;
+}
+.upload #upload{
+	display: inline-block;
+	height: 65px;
+	line-height: 65px;
+	width: 140px;
+	color: #ffffff;
+	background-color: #2E2E2E;
+	text-align: center;
+	cursor:pointer;
+}
+.upload .file{
+	display: none;
+}
+aside{
+	margin-top: 50px;
+}
+aside .list{
+	margin-left: 50px;
+}
+.list .listItem{
+	list-style: none;
+	color: #505050;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #C9C9C9;
+}
+.listItem .userName{
+	color: #191919;
+}
+.listItem .content{
+	color: #525252;
+}
+.page{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.page button{
+	margin-left: 10px;
+	border-style: none;
+	cursor: pointer;
+}
+/*.issue button{
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	border-style: none;
+	height: 30px;
+	width: 100px;
+	background-color: #626262;
+	color: #ffffff;
+	cursor: pointer;
+}*/
+@media screen and (max-width: 1200px) {
+	.description{
+		width: 100%;
+	}
+	.userUpload{
+		width: 40%;
+		min-width: 200px;
+		margin: 50px auto;
+	}
+	article,aside{
+		width: 95%;
+	}
+	
+
+}
+@media screen and (max-width: 950px) {
+	.hButtom .left{
+		display: none;
+	}
+	.nav li{
+		margin:0 10px;
+		
+	}
+	.hButtom a{
+		margin:5px;
+	}
+	.upload #upload{
+		height: 50px;
+		line-height: 50px;
+		width: 135px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.hButtom .left{
+		display: none;
+	}
+	.nav li{
+		margin:0;
+		
+	}
+	.nav{
+		margin-left:5%;
+	}
+	.hButtom a{
+		margin:5px;
+	}
+	.hButtom{
+		left: 0;
+		right: 2px;
+	}
+	 .hButtom .addBackground{
+		background-color: #FFFFFF;
+		border-radius:0 0 8px 8px ;
+		/*box-shadow: 1px 1px 1px;*/
+	}
+	aside .list{
+	margin-left: 10px;
+	}
+	.upload #upload{
+		height: 40px;
+		line-height: 40px;
+		width: 100px;
+	}
+}
+
+

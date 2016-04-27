@@ -15,7 +15,7 @@ body{
 }
 .wrap h1{
 	text-align: center;
-	color: #656565;
+	color: #313131;
 	font: bolder 25px '宋体';
 }
 .userInput,.link,.submit{
@@ -48,7 +48,7 @@ label{
 	visibility: hidden;
 }
 .link a{
-	color: #878686;
+	color: #3c3c3c;
 	font-size: 14px;
 	text-decoration: underline;
 	-moz-box-sizing:border-box; /* Firefox */
@@ -84,7 +84,7 @@ label{
 	margin: 20px 0 30px;
 	cursor: pointer;
 	border-style:none;
-	background-color:rgba(0,0,0,0.8);
+	background-color:rgba(0,0,0,0.9);
 	font: bold 15px '宋体'; 
 	color: #ffffff; 
 }
