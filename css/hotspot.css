@@ -50,7 +50,7 @@ header{
 	padding-top: 5px; 
 }
 .nav{
-	margin-left:10%;
+	margin-left:15%;
 }
 .nav li{
 	list-style: none;
@@ -88,7 +88,7 @@ header{
 	box-shadow:  20px 10px 5px #6E6E6E;
 }*/
 h2{
-	color: #262626;
+	color: #000000;
 	font: bold 18px '微软雅黑'
 }
 h3{
@@ -109,7 +109,7 @@ article,aside{
 }
 .description p{
 	text-indent: 2em;
-	color: #2E2E2E;
+	color: #0F0F0F;
 	font: 15px '微软雅黑';
 	line-height: 25px;
 }
@@ -124,20 +124,22 @@ article,aside{
 	box-shadow: 1px 0 20px;
 }
 .upload{
-	margin: 30px auto;
+	margin: 30px auto;text-align: center;
 }
 .upload .uploadurl{
 	display: inline;
 	font-size: 12px;
 	margin-right: 10px;
+
 }
 .upload #upload{
 	display: inline-block;
+	margin-top: 5px;
 	height: 65px;
 	line-height: 65px;
 	width: 140px;
 	color: #ffffff;
-	background-color: #2E2E2E;
+	background-color: #1D1D1D;
 	text-align: center;
 	cursor:pointer;
 }
@@ -185,12 +187,15 @@ aside .list{
 	color: #ffffff;
 	cursor: pointer;
 }*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
 	.description{
 		width: 100%;
+		float: none;
+		margin: 0 auto;
 	}
 	.userUpload{
-		width: 40%;
+		width: 30%;
+		float: none;
 		min-width: 200px;
 		margin: 50px auto;
 	}

@@ -53,7 +53,7 @@ header{
 	padding-top: 5px; 
 }
 .nav{
-	margin-left:10%;
+	margin-left:15%;
 }
 .nav li{
 	list-style: none;
@@ -96,7 +96,7 @@ article{
 }
 .content .left{
 	float: left;
-	width: 15%;
+	width: 18%;
 
 }
 .left p{
@@ -111,10 +111,84 @@ p.now{
 	background-color: #ffffff;
 	border-top:1px solid #D0D0D0;
 }
+form{
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+
+}
+.item-title{
+	position: relative;
+	border-bottom: 1px #C6C6C6 dashed;
+}
+.item-title span{
+	font-size: 15px;
+	font-weight: bold;
+	color: #838383;
+}
+.firstTab{
+	margin: 5px auto 0;
+	text-align: left;
+	padding-bottom: 10px;
+	border-spacing: 0px 20px;
+}
+.firstTab th{
+	vertical-align: top;
+	color: #3C3C3C;
+	font-size: 15px;
+}
+.firstTab td{
+	padding-left: 10px;
+}
+.file{
+	display: none;
+}
+.upload{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #363636;
+	background-color: #F0F0F0;
+	vertical-align: middle;
+	border: 1px solid #DDDCDC;
+	box-shadow: 1px 1px 1px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.uploadurl{
+	color: #363636;
+}
+td input{
+	padding: 5px 10px;
+	height: 25px;
+	width: 300px;
+	background-color: #FEFEFE;
+	border:1px #D1D1D1 solid;
+	color: #363636;
+	border-radius: 3px; 
+}
+td span{
+	font-size: 12px;
+	color: #363636; 
+}
+td.tj{
+	text-align: center;
+}
+.tj button{
+	width: 280px;
+	height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	border:1px outset #6F6E6E;
+	background-color: #272727;
+	color: #ffffff;
+}
 .content .right{
 	float: left;
 	padding:20px 0 4% 20px;
-	width:75%;
+	width:70%;
 	background-color: #ffffff;
 	border: 2px solid #D0D0D0;
 	border-left-style:none;
@@ -144,7 +218,7 @@ p.now{
 	color: #292929;
 }
 .right div a{
-	margin-left: 20px;
+	margin-left: 30px;
 	font-size: 14px;
 	color: #772222;
 	text-decoration: none;
@@ -204,5 +278,19 @@ p.now{
 		background-color: #FFFFFF;
 		border-radius:0 0 8px 8px ;
 		/*box-shadow: 1px 1px 1px;*/
+	}
+	td input{
+		padding: 5px 5px;
+		height: 20px;
+		width: 90%;
+		min-width: 150px;
+		background-color: #FEFEFE;
+		border:1px #D1D1D1 solid;
+		color: #929191; 
+	}
+	.upload{
+		width: 60px;
+		height: 20px;
+		line-height: 20px;
 	}
 }

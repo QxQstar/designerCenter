@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var width = document.getElementById('img').offsetWidth;
+	var width = document.getElementById('img').clientWidth;
 	width+= 'px';
 	//alert(width);
 	var time = 300,opts = [{'width':0},{'width':width}];

@@ -20,7 +20,7 @@
 						<li ><a href='#' >普通</a></li>
 						<li ><a href='#'>活动</a></li>
 						<li class='addBackground'><a href='#' style='color:#000000'>个人中心</a></li>
-						<li><a href='#'>信息审核</a></li>
+						<!-- <li><a href='#'>信息审核</a></li> -->
 					</ul>
 				</nav>
 				<div class='right'><a href='login.html'>注销</a></div>
@@ -32,7 +32,7 @@
 					<p id='withdraw' class='now'>资金提现</p>
 					<p id='publish'>已发布</p>
 					<p id='modify' >设置</p>
-					
+					<p id='check'>信息审核</p>
 					
 				</div>
 				<div class='right'>
@@ -88,9 +88,61 @@
 					</div>
 					<div class='row3' id='row3'>
 						<div class='asset'>
-							<span>余额:</span><span>55444元</span>
+							<span>余额:</span><span>55444元</span><a href='#'>资金提现</a>
 						</div>
-						<a href='#'>资金提现</a>
+						
+					</div>
+					<div class='row4 hide' id='row4'>
+						<form>
+							<div class='item-title'>
+								<span>基本信息</span>
+							</div>
+							<table class='firstTab'>
+								<tr>
+									<th>设计师昵称：</th>
+									<td>
+										<input type='text' required><br>
+										<span>除此信息外，其他信息不对外显示</span>
+									</td>
+								</tr>
+								<tr>
+									<th>设计师姓名：</th>
+									<td>
+										<input type='text' required><br>
+										<span>与银行卡账户名一致</span>
+									</td>
+								</tr>
+								<tr>
+									<th>身份证号码：</th>
+									<td>
+										<input type='text' required><br>
+										<span>为了明确版权归属和保护资金安全，请上传您的身份证明；</span>
+									</td>
+								</tr>
+								<tr>
+									<th>身份证图片</th>
+									<td>
+										<input type='file' name='myfile' class='file' id='file' required>
+										<span class='upload' id='upload'>选择图片</span>
+										<span class='uploadurl' id='uploadurl'>未选择图片</span><br>
+										<span>图片大小不超过2M，图片格式为JPG，或JPGE</span><br>
+										<img src="#" alt='example'>
+									</td>
+								</tr>
+								<tr>
+									<th>邮箱</th>
+									<td>
+										<input type='text'><br>
+										<span>邮箱可由于找回密码，此项不是必填项</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan='2' class='tj'>
+										<button type='submit'>提交</button>
+									</td>
+								</tr>
+							</table>
+						</form>
 					</div>
 				</div>
 			</div>

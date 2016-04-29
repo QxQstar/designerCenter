@@ -44,8 +44,6 @@ header{
 }*/
 /*.hButtom .left{
 	font: bold 20px '宋体';
-	float: left;
-	margin-left: 500px;
 }*/
 .hButtom .right{
 	float: right;
@@ -69,11 +67,11 @@ header{
 .hButtom a:hover{
 	text-decoration: underline;
 }
- .hButtom .addBackground{
+ /*.hButtom .addBackground{
 	background-color: #FFFFFF;
 	border-radius:0 0 12px 12px ;
-	/*box-shadow: 1px 1px 1px;*/
-}
+	box-shadow: 1px 1px 1px;
+}*/
 .clearfix{
 	zoom:1;
 }
@@ -104,17 +102,29 @@ article{
 	/*width: 25%;*/
 	text-align: center;
 	position: relative;
+	border-radius: 10px;
+	text-decoration: none;
+	
 }
 .brand img{
 	/*width: 302px;*/
 	width: 100%;
 	height: 318px;
+	/*background: url(../img/kapai3.png);*/
+	/*background-size:100% 100%;*/ 
+	box-shadow: 5px 5px 15px #363243;
+}
+.brife{
+	font:bold 16px '微软雅黑';
+	color: #030820;
+	line-height: 175%;
 }
 .brand .info{
 	display: none;
 	background-color: #f0f0f0;
 	color: #369242;
 	line-height:240px;
+	box-shadow: 5px 5px 15px #9E9E9E;
 }
 .vertical .info{
 	/*width: 100;*/
@@ -135,7 +145,12 @@ article{
 .vertical .info{
 	display: none;
 }*/
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 970px){
+	body{
+		overflow: auto;
+	}
+}
+@media screen and (max-device-width: 970px){
 	/*.hButtom .left{
 		display: none;
 	}*/
@@ -149,23 +164,27 @@ article{
 	.brand{
 	width: 510px;
 	margin: 0 auto;
-}
+	}
+	.brife{
+	font:bold 14px '微软雅黑';
+	}
 	.brand a{
-	display: block;
+	/*display: block;*/
 	float: left;
 	/*margin: 0 auto;*/
 	width: 150px;
 	height: 200px;
 	/*width: 50%;*/
 	margin-left: 10px;
-	text-align: center;
+	/*text-align: center;*/
 	position: relative;
-
+	
 	}
 	.brand img{
 	/*width: 302px;*/
 	width: 100%;
 	height: 200px;
+
 }
 .vertical .info{
 	/*width: 100;*/
@@ -176,7 +195,7 @@ article{
 	
 }
 	
-@media screen and (max-width: 420px){
+@media screen and (max-device-width: 520px){
 	/*.hButtom .left{
 		display: none;
 	}*/
@@ -213,6 +232,9 @@ article{
 	text-align: center;
 	position: relative;
 	}
+	/*.brife{
+	font:bold 14px '微软雅黑';
+	}*/
 	.brand img{
 	/*width: 302px;*/
 	width: 100%;

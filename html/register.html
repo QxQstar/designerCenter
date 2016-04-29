@@ -24,9 +24,10 @@
 				</div>
 				<div class='link clearfix'>
 					<label for='yzm'>
-						<input type='text' class='left' id='yzm'placeholder='输入右侧验证码'>
+						<input type='text' class='left' id='yzm'placeholder='输入验证码'>
 					</label>
-					<img src="#" class='right' id='img'></img>
+					<img src="../php/yzm.php?r=<?php echo rand();?>" class='right' id='img'>
+					<img src="../img/gengx.png" class='gengx' id='gengx'>
 				</div>
 				<div class='submit'>
 					<button type='submit'>立即注册</button>
@@ -34,5 +35,12 @@
 			</form>
 		</section>
 	</div>
+	<script type="text/javascript">
+	var gengx = document.getElementById('gengx');
+	var img = document.getElementById('img');
+	gengx.onclick = function(){
+		img.src = '../php/yzm.php?r='+Math.random();
+	};
+	</script>
 </body>
 </html>
